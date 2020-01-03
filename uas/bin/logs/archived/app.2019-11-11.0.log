@@ -1,0 +1,1320 @@
+2019-11-11 11:17:47,136 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 1088 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:17:47,137 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:17:47,137 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:17:48,136 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 1.304 seconds (JVM running for 967.563)
+2019-11-11 11:18:01,779 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:18:01,782 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:18:01,782 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:18:07,016 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 5.749 seconds (JVM running for 7.066)
+2019-11-11 11:21:33,441 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 11:30:36,243 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:30:36,243 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:30:36,243 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:30:37,427 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 1.232 seconds (JVM running for 757.476)
+2019-11-11 11:31:36,638 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:31:36,638 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:31:36,638 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:31:37,449 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'auditorProvider' defined in class path resource [com/cg/uas/config/UASConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.domain.AuditorAware]: Factory method 'auditorProvider' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	AuditorAwareImpl cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.cg.uas.UasApplication.main(UasApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.domain.AuditorAware]: Factory method 'auditorProvider' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	AuditorAwareImpl cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	AuditorAwareImpl cannot be resolved to a type
+
+	at com.cg.uas.config.UASConfiguration.auditorProvider(UASConfiguration.java:14)
+	at com.cg.uas.config.UASConfiguration$$EnhancerBySpringCGLIB$$4bb39f83.CGLIB$auditorProvider$0(<generated>)
+	at com.cg.uas.config.UASConfiguration$$EnhancerBySpringCGLIB$$4bb39f83$$FastClassBySpringCGLIB$$32da39c9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.cg.uas.config.UASConfiguration$$EnhancerBySpringCGLIB$$4bb39f83.auditorProvider(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+2019-11-11 11:32:59,580 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:32:59,580 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:32:59,580 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:33:00,417 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'auditorProvider' defined in class path resource [com/cg/uas/config/UASConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.domain.AuditorAware]: Factory method 'auditorProvider' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from AuditorAwareImpl to AuditorAware<String>
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:645)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.cg.uas.UasApplication.main(UasApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.domain.AuditorAware]: Factory method 'auditorProvider' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from AuditorAwareImpl to AuditorAware<String>
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:640)
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from AuditorAwareImpl to AuditorAware<String>
+
+	at com.cg.uas.config.UASConfiguration.auditorProvider(UASConfiguration.java:14)
+	at com.cg.uas.config.UASConfiguration$$EnhancerBySpringCGLIB$$4bb39f83.CGLIB$auditorProvider$0(<generated>)
+	at com.cg.uas.config.UASConfiguration$$EnhancerBySpringCGLIB$$4bb39f83$$FastClassBySpringCGLIB$$32da39c9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.cg.uas.config.UASConfiguration$$EnhancerBySpringCGLIB$$4bb39f83.auditorProvider(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+2019-11-11 11:33:34,170 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:33:34,170 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:33:34,170 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:33:35,232 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 1.144 seconds (JVM running for 935.282)
+2019-11-11 11:37:39,378 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:37:39,378 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:37:39,378 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:37:40,417 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 1.069 seconds (JVM running for 1180.466)
+2019-11-11 11:39:22,074 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:39:22,074 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:39:22,074 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:39:22,910 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 0.867 seconds (JVM running for 1282.959)
+2019-11-11 11:39:43,910 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:39:43,911 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:39:43,911 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:39:44,712 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 0.836 seconds (JVM running for 1304.762)
+2019-11-11 11:41:11,425 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:41:11,425 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:41:11,425 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:41:12,383 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 0.987 seconds (JVM running for 1392.432)
+2019-11-11 11:42:11,776 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:42:11,776 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:42:11,776 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:42:12,650 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 0.905 seconds (JVM running for 1452.699)
+2019-11-11 11:43:29,036 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 23924 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:43:29,037 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:43:29,037 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:43:29,858 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 0.85 seconds (JVM running for 1529.907)
+2019-11-11 11:43:41,145 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 10152 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:43:41,147 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:43:41,147 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:43:46,228 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 5.506 seconds (JVM running for 6.921)
+2019-11-11 11:49:54,057 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 10152 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:49:54,058 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:49:54,058 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:49:55,042 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 1.026 seconds (JVM running for 375.735)
+2019-11-11 11:51:40,824 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 10152 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:51:40,824 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:51:40,824 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:51:41,654 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 0.864 seconds (JVM running for 482.347)
+2019-11-11 11:54:32,925 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 10152 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 11:54:32,926 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 11:54:32,926 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 11:54:33,958 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 1.066 seconds (JVM running for 654.651)
+2019-11-11 12:06:59,487 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning appointment list
+2019-11-11 12:22:43,514 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Returning appointment list
+2019-11-11 13:06:41,653 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Schedule added. Audit Details: ScheduleID:16 Created on:Mon Nov 11 13:06:41 IST 2019.Created by: LAPTOP-5CEV9MRF/192.168.1.17
+2019-11-11 13:17:15,134 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 13:17:27,946 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 13:17:41,575 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Validating schedule Id entered for add Program..
+2019-11-11 13:17:41,588 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-3] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 13:17:41,696 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] adding program to the given scheduleId
+2019-11-11 13:17:41,697 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Program added! AUDIT TRAIL=> Created on:Mon Nov 11 13:17:41 IST 2019 Created by: LAPTOP-5CEV9MRF/192.168.1.17
+2019-11-11 13:17:48,164 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 13:50:44,507 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 13:53:10,202 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Schedule added. Audit Details: ScheduleID:18 Created on:Mon Nov 11 13:53:10 IST 2019.Created by: LAPTOP-5CEV9MRF/192.168.1.17
+2019-11-11 13:58:33,751 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Schedule added. Audit Details: ScheduleID:19 Created on:Mon Nov 11 13:58:33 IST 2019.Created by: LAPTOP-5CEV9MRF/192.168.1.17
+2019-11-11 14:03:19,274 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Schedule added. Audit Details: ScheduleID:20 Created on:Mon Nov 11 14:03:19 IST 2019.Created by: LAPTOP-5CEV9MRF/192.168.1.17
+2019-11-11 14:03:41,579 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:19:40,471 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:20:15,463 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:20:29,880 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:20:34,442 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 14:20:44,655 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 14:20:53,081 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 14:21:00,071 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:21:06,215 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:21:22,593 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:21:40,622 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:23:34,893 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:23:43,705 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:23:54,361 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 14:23:59,414 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 14:24:05,962 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 14:24:18,087 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:24:24,582 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:24:28,937 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:24:35,584 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:24:43,712 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:24:50,274 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:24:54,682 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:25:01,602 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 14:25:05,851 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 14:25:10,806 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 14:25:14,245 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:25:28,398 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:25:35,598 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:25:42,140 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:25:46,054 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:25:55,983 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:26:27,375 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:27:25,878 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 14:27:29,288 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-1] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:27:29,293 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-1] Schedule Deleted. Audit Details: ScheduleID:1 Modified on:null. Modified by: null
+2019-11-11 14:27:31,749 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:27:48,332 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:27:52,345 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:28:28,764 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:28:42,188 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:29:06,116 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:29:37,173 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:30:07,522 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 14:32:51,859 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 14:33:20,750 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:35:47,916 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:36:17,504 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:36:27,830 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:36:46,472 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:36:51,007 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:37:31,297 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 14:37:41,440 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 14:37:56,398 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 14:38:04,084 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:38:08,883 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:38:12,851 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:38:23,130 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:38:32,078 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:38:41,015 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:38:46,168 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:38:53,845 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 14:39:01,551 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 14:39:05,082 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 14:39:10,177 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:39:13,947 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:39:19,657 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:39:24,324 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:39:30,856 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:39:34,957 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:39:40,940 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:39:48,327 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 14:40:15,917 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 14:40:23,576 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 14:40:28,413 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:40:35,868 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:40:43,171 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:40:53,604 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:40:59,374 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:41:04,915 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:41:09,661 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:41:19,696 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 14:41:25,239 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 14:41:29,076 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 14:41:35,038 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:41:38,809 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:41:44,658 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:42:03,518 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:42:07,347 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:42:11,828 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:42:17,027 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:42:20,431 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 14:42:25,943 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 14:42:32,789 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 14:42:38,739 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Validating schedule id entered as parameter..
+2019-11-11 14:42:38,745 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-2] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:42:38,747 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Schedule Id validated... Getting program List
+2019-11-11 14:42:38,758 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Returning program list in the schedule..
+2019-11-11 14:43:02,974 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:43:46,101 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:44:16,512 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Validating schedule id entered as parameter..
+2019-11-11 14:44:16,519 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-5] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:44:16,522 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Schedule Id validated... Getting program List
+2019-11-11 14:44:16,526 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Program list is empty.
+2019-11-11 14:44:19,830 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:44:21,479 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Validating schedule id entered as parameter..
+2019-11-11 14:44:21,486 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-7] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:44:21,488 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Schedule Id validated... Getting program List
+2019-11-11 14:44:21,496 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Returning program list in the schedule..
+2019-11-11 14:44:22,939 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:44:24,153 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Validating schedule id entered as parameter..
+2019-11-11 14:44:24,161 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-9] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:44:24,163 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Schedule Id validated... Getting program List
+2019-11-11 14:44:24,167 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Program list is empty.
+2019-11-11 14:44:25,410 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 14:44:26,441 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Validating schedule id entered as parameter..
+2019-11-11 14:44:26,448 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-1] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:44:26,450 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Schedule Id validated... Getting program List
+2019-11-11 14:44:26,456 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning program list in the schedule..
+2019-11-11 14:44:28,014 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:45:10,315 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:45:44,112 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:46:12,109 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:46:20,563 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Validating schedule id entered as parameter..
+2019-11-11 14:46:20,570 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-6] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:46:20,573 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Schedule Id validated... Getting program List
+2019-11-11 14:46:20,577 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Program list is empty.
+2019-11-11 14:46:23,662 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 14:46:24,741 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Validating schedule id entered as parameter..
+2019-11-11 14:46:24,748 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-8] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:46:24,750 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Schedule Id validated... Getting program List
+2019-11-11 14:46:24,757 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning program list in the schedule..
+2019-11-11 14:46:37,496 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-10] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:46:37,504 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-10] Program Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:46:37,510 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-10] Program Deleted. AUDIT TRAIL=> ProgramID:10 Modified by:nullModified on: null
+2019-11-11 14:46:37,526 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] removing program from the given scheduleId
+2019-11-11 14:46:39,124 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Validating schedule id entered as parameter..
+2019-11-11 14:46:39,132 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-1] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:46:39,134 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Schedule Id validated... Getting program List
+2019-11-11 14:46:39,142 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning program list in the schedule..
+2019-11-11 14:47:37,990 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 14:47:41,840 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 14:47:46,060 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 14:47:54,541 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 14:47:59,260 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 14:48:05,681 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Validating schedule id entered as parameter..
+2019-11-11 14:48:05,688 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-7] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:48:05,689 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Schedule Id validated... Getting program List
+2019-11-11 14:48:05,697 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Program list is empty.
+2019-11-11 14:48:10,237 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 14:48:11,759 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Validating schedule id entered as parameter..
+2019-11-11 14:48:11,765 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-9] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 14:48:11,767 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Schedule Id validated... Getting program List
+2019-11-11 14:48:11,773 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Returning program list in the schedule..
+2019-11-11 14:48:44,761 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 14:49:35,370 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:06:40,724 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:06:44,018 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:06:55,416 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:07:00,069 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:07:05,955 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:07:10,539 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:07:25,337 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 15:07:29,113 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:07:38,376 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:07:43,436 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:07:46,872 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:07:52,662 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:08:05,163 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:08:09,015 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:08:14,811 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:08:20,792 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:08:25,644 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 15:08:29,498 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:08:36,419 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:09:25,030 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:09:34,127 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:09:41,962 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:09:49,840 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:09:58,425 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:10:21,011 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:10:28,988 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:10:34,738 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 15:10:42,655 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:10:50,755 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:10:59,393 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:11:10,992 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:11:23,048 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:11:33,538 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:16:49,963 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:17:08,032 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:19:43,074 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:19:51,677 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:31:20,707 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:31:43,441 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:32:03,937 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:32:10,374 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:32:15,102 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 15:32:23,710 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:32:31,889 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:32:37,747 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:32:48,088 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:32:57,233 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:33:08,685 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:33:13,527 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:33:21,615 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:33:28,701 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:33:32,693 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 15:33:40,909 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:33:44,409 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:33:48,968 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:33:53,588 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:33:59,716 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:34:09,012 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:34:12,635 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:34:18,460 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:34:23,013 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:34:26,436 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 15:34:49,808 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:35:27,659 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:35:32,621 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:35:37,840 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:35:44,221 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:35:48,188 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:36:46,269 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:36:51,766 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:37:03,030 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:37:07,348 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 15:37:16,738 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:37:26,065 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:37:31,685 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:37:35,549 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:37:40,884 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:37:49,043 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:37:55,385 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:38:02,751 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:38:10,475 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:38:27,073 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 15:38:33,685 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:38:44,339 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:38:48,486 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:38:52,132 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:38:56,832 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:39:06,489 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:39:38,381 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:39:44,689 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:39:50,109 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:39:58,689 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 15:40:04,360 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:40:08,554 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:40:37,622 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:40:41,984 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:41:06,860 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:41:18,983 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:41:30,323 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:41:37,483 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Validating schedule Id entered for applicant..
+2019-11-11 15:41:37,489 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-7] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:41:37,491 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting applicants corresponding to the schedule id..
+2019-11-11 15:41:37,526 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:41:39,070 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:41:40,516 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Validating schedule Id entered for applicant..
+2019-11-11 15:41:40,521 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-9] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:41:40,523 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting applicants corresponding to the schedule id..
+2019-11-11 15:41:40,526 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-9] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:41:42,139 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:42:48,226 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:42:50,964 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Validating schedule Id entered for applicant..
+2019-11-11 15:42:50,971 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-3] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:42:50,973 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting applicants corresponding to the schedule id..
+2019-11-11 15:42:50,976 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:42:54,596 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:42:55,841 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Validating schedule Id entered for applicant..
+2019-11-11 15:42:55,847 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-5] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:42:55,849 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting applicants corresponding to the schedule id..
+2019-11-11 15:42:55,852 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:42:57,464 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:42:58,872 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Validating schedule Id entered for applicant..
+2019-11-11 15:42:58,877 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-7] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:42:58,879 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting applicants corresponding to the schedule id..
+2019-11-11 15:42:58,883 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:43:02,207 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 15:43:03,442 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Validating schedule Id entered for applicant..
+2019-11-11 15:43:03,449 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-9] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:43:03,450 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting applicants corresponding to the schedule id..
+2019-11-11 15:43:03,454 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-9] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:43:19,169 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 15:45:52,594 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 15:45:54,801 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Validating schedule Id entered for applicant..
+2019-11-11 15:45:54,807 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-3] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:45:54,809 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting applicants corresponding to the schedule id..
+2019-11-11 15:45:54,812 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:46:19,719 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 15:46:27,514 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:46:37,217 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 15:46:41,750 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:46:49,128 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Validating schedule Id entered for applicant..
+2019-11-11 15:46:49,134 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-8] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:46:49,136 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting applicants corresponding to the schedule id..
+2019-11-11 15:46:49,139 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:47:46,027 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 15:49:24,472 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 15:49:27,890 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Validating schedule Id entered for applicant..
+2019-11-11 15:49:27,897 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-2] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:49:27,899 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting applicants corresponding to the schedule id..
+2019-11-11 15:49:27,904 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:49:31,015 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 15:49:43,157 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Validating schedule Id entered for applicant..
+2019-11-11 15:49:43,165 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-4] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:49:43,166 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting applicants corresponding to the schedule id..
+2019-11-11 15:49:43,169 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:49:45,257 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 15:49:46,499 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Validating schedule Id entered for applicant..
+2019-11-11 15:49:46,505 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-6] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:49:46,507 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting applicants corresponding to the schedule id..
+2019-11-11 15:49:46,510 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 15:50:58,579 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 15:51:26,261 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Validating schedule Id entered for applicant..
+2019-11-11 15:51:26,268 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-8] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 15:51:26,269 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting applicants corresponding to the schedule id..
+2019-11-11 15:51:26,273 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-9123-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.cg.uas.controller.UASController.pendingApplicants(UASController.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-11-11 16:01:30,128 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 10152 (D:\PLP\uas\target\classes started by HP in D:\PLP\uas)
+2019-11-11 16:01:30,128 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 16:01:30,129 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 16:01:31,942 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 1.962 seconds (JVM running for 15472.648)
+2019-11-11 16:05:02,184 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Validating schedule Id entered for applicant..
+2019-11-11 16:05:02,197 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-2] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 16:05:02,199 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting applicants corresponding to the schedule id..
+2019-11-11 16:05:02,216 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Returning Applicant list to the admin..
+2019-11-11 16:05:26,172 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 16:05:28,882 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Validating schedule Id entered for applicant..
+2019-11-11 16:05:28,889 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-4] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 16:05:28,891 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting applicants corresponding to the schedule id..
+2019-11-11 16:05:28,902 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Returning Applicant list to the admin..
+2019-11-11 16:05:49,469 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Validating Applicant Id selected for approval
+2019-11-11 16:05:49,473 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Validating schedule Id entered for applicant..
+2019-11-11 16:05:49,481 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-6] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 16:05:49,483 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting applicants corresponding to the schedule id..
+2019-11-11 16:05:49,492 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-5] Correct applicant id... returning BigInteger value of the applicant Id
+2019-11-11 16:05:49,493 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Applicant Id Validated... approving Applicant.
+2019-11-11 16:05:49,494 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-5] Getting the applicant object corresponding to the applicant Id...
+2019-11-11 16:05:49,494 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Returning Applicant list to the admin..
+2019-11-11 16:05:49,496 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-5] Applicant object found.. setting status to 1 (Approved)
+2019-11-11 16:05:49,496 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-5] Applicant status UPDATED. AUDIT TRAIL=> Applicant Id:12 Modified on:null Modified by:null
+2019-11-11 16:05:51,764 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Validating schedule Id entered for applicant..
+2019-11-11 16:05:51,772 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-7] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 16:05:51,773 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting applicants corresponding to the schedule id..
+2019-11-11 16:05:51,786 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Returning Applicant list to the admin..
+2019-11-11 16:17:56,397 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 16:37:30,223 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 16:44:52,655 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 16:45:09,290 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 16:45:17,090 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 16:45:28,976 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning appointment list
+2019-11-11 17:00:33,224 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Returning appointment list
+2019-11-11 17:00:38,265 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning appointment list
+2019-11-11 17:00:53,415 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Returning appointment list
+2019-11-11 17:01:02,373 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Returning appointment list
+2019-11-11 17:02:17,714 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Returning appointment list
+2019-11-11 17:03:40,805 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Returning appointment list
+2019-11-11 17:03:53,107 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning appointment list
+2019-11-11 17:07:20,527 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Returning appointment list
+2019-11-11 17:07:47,668 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning appointment list
+2019-11-11 17:07:55,899 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Returning appointment list
+2019-11-11 17:08:02,845 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Returning appointment list
+2019-11-11 17:08:08,841 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Returning appointment list
+2019-11-11 17:08:16,287 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Returning appointment list
+2019-11-11 17:08:23,165 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Returning appointment list
+2019-11-11 17:08:31,297 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning appointment list
+2019-11-11 17:09:59,801 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Returning appointment list
+2019-11-11 17:10:11,153 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning appointment list
+2019-11-11 17:10:22,412 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Returning appointment list
+2019-11-11 17:13:45,729 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Returning appointment list
+2019-11-11 17:14:42,948 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Returning appointment list
+2019-11-11 17:14:51,579 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Returning appointment list
+2019-11-11 17:17:22,111 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning appointment list
+2019-11-11 17:17:57,396 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Returning appointment list
+2019-11-11 17:18:01,308 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Returning appointment list
+2019-11-11 21:20:38,075 INFO com.cg.uas.UasApplication [restartedMain] Starting UasApplication on LAPTOP-5CEV9MRF with PID 20652 (E:\uas\target\classes started by HP in E:\uas)
+2019-11-11 21:20:38,176 DEBUG com.cg.uas.UasApplication [restartedMain] Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-11 21:20:38,176 INFO com.cg.uas.UasApplication [restartedMain] The following profiles are active: production
+2019-11-11 21:20:43,738 INFO com.cg.uas.UasApplication [restartedMain] Started UasApplication in 6.23 seconds (JVM running for 7.425)
+2019-11-11 21:21:03,398 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 21:25:05,634 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-4] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 21:25:05,671 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-4] Schedule Deleted. Audit Details: ScheduleID:20 Modified on:11/11/19 2:03 PM. Modified by: LAPTOP-5CEV9MRF/192.168.1.17
+2019-11-11 21:25:08,349 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 21:26:24,538 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 21:26:28,091 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Validating schedule Id entered for applicant..
+2019-11-11 21:26:28,103 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-8] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 21:26:28,107 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting applicants corresponding to the schedule id..
+2019-11-11 21:26:28,167 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning Applicant list to the admin..
+2019-11-11 21:26:31,508 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 21:26:34,677 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Validating schedule Id entered for applicant..
+2019-11-11 21:26:34,691 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-9] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 21:26:34,702 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting applicants corresponding to the schedule id..
+2019-11-11 21:26:34,721 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Returning Applicant list to the admin..
+2019-11-11 21:26:56,665 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 21:27:08,109 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Validating schedule Id entered for add Program..
+2019-11-11 21:27:08,119 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-2] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 21:27:08,223 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] adding program to the given scheduleId
+2019-11-11 21:27:08,223 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Program added! AUDIT TRAIL=> Created on:Mon Nov 11 21:27:08 IST 2019 Created by: LAPTOP-5CEV9MRF/192.168.43.252
+2019-11-11 21:27:13,486 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 21:27:46,657 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Returning appointment list
+2019-11-11 21:28:05,986 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 21:28:08,266 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 22:20:04,023 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 22:20:11,738 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 22:22:40,963 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning appointment list
+2019-11-11 22:27:35,491 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 22:27:36,706 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Returning appointment list
+2019-11-11 22:28:37,481 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 22:28:39,722 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning appointment list
+2019-11-11 22:30:22,110 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 22:30:24,698 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning appointment list
+2019-11-11 22:30:32,938 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 22:32:19,192 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 22:32:21,143 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Returning appointment list
+2019-11-11 22:32:31,587 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 22:32:34,102 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Returning appointment list
+2019-11-11 22:32:54,732 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 22:32:56,300 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Returning appointment list
+2019-11-11 22:33:01,148 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Validating schedule id entered as parameter..
+2019-11-11 22:33:01,161 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-9] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 22:33:01,165 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Schedule Id validated... Getting program List
+2019-11-11 22:33:01,194 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Returning program list in the schedule..
+2019-11-11 22:37:51,064 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting the schedule corresponding to the schedule Id
+2019-11-11 22:37:51,066 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-3] Returning Schedule object of the schedule id..
+2019-11-11 22:37:51,070 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting the program corresponding to the program Id
+2019-11-11 22:37:51,076 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] All inputs valid.. creating applicant
+2019-11-11 22:37:51,076 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Applicant created.. returning applicant object
+2019-11-11 22:37:51,076 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-3] Calling repository save method to save the Applicant in service layer..
+2019-11-11 22:37:51,138 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] New Applicant Added. AUDIT TRAIL=> Applicant ID: 22 Created on: Mon Nov 11 22:37:51 IST 2019 Created by: LAPTOP-5CEV9MRF/192.168.1.6
+2019-11-11 22:39:28,971 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 22:39:30,802 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Returning appointment list
+2019-11-11 22:39:39,797 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 22:39:41,488 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Returning appointment list
+2019-11-11 22:39:49,226 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 22:39:51,532 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning appointment list
+2019-11-11 22:39:54,814 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 22:40:09,305 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 22:40:11,349 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Returning appointment list
+2019-11-11 22:40:45,072 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 22:40:46,714 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Returning appointment list
+2019-11-11 22:41:33,761 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 22:41:54,673 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 22:41:57,499 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Returning appointment list
+2019-11-11 22:42:11,487 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 22:42:13,547 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning appointment list
+2019-11-11 22:42:23,484 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 22:42:24,799 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Returning appointment list
+2019-11-11 22:42:47,316 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 22:42:48,843 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Returning appointment list
+2019-11-11 22:44:40,514 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 22:44:42,365 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning appointment list
+2019-11-11 22:44:48,852 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 22:44:51,190 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning appointment list
+2019-11-11 22:44:58,651 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Getting list of all schedules in the system..
+2019-11-11 22:45:01,587 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Returning appointment list
+2019-11-11 22:45:04,413 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 22:46:29,815 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 22:46:31,155 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Returning appointment list
+2019-11-11 22:46:36,759 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 22:46:38,882 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Returning appointment list
+2019-11-11 22:52:22,033 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 22:52:22,791 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Returning appointment list
+2019-11-11 22:52:41,194 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 22:52:42,105 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Returning appointment list
+2019-11-11 22:53:00,112 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 22:53:01,255 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Returning appointment list
+2019-11-11 22:53:11,921 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 22:53:12,982 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning appointment list
+2019-11-11 22:53:17,082 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 22:53:18,385 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Returning appointment list
+2019-11-11 22:53:21,766 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 22:53:22,990 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Returning appointment list
+2019-11-11 22:53:27,038 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 22:53:28,262 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Returning appointment list
+2019-11-11 22:54:44,801 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Getting list of all schedules in the system..
+2019-11-11 22:54:44,824 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Returning appointment list
+2019-11-11 22:55:12,577 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning appointment list
+2019-11-11 22:55:12,641 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 22:55:38,317 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Getting list of all schedules in the system..
+2019-11-11 22:55:38,541 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Returning appointment list
+2019-11-11 23:01:09,529 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 23:01:10,610 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Returning appointment list
+2019-11-11 23:01:20,382 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 23:01:21,598 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Returning appointment list
+2019-11-11 23:01:24,872 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 23:01:26,762 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Returning appointment list
+2019-11-11 23:01:31,066 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 23:01:32,600 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Returning appointment list
+2019-11-11 23:01:37,567 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 23:01:38,856 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-2] Returning appointment list
+2019-11-11 23:01:42,234 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-4] Getting list of all schedules in the system..
+2019-11-11 23:01:44,658 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Returning appointment list
+2019-11-11 23:01:58,000 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 23:01:59,606 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Returning appointment list
+2019-11-11 23:05:00,737 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Getting list of all schedules in the system..
+2019-11-11 23:05:05,283 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-9] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 23:05:05,285 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-9] Schedule Deleted. Audit Details: ScheduleID:18 Modified on:11/11/19 1:53 PM. Modified by: LAPTOP-5CEV9MRF/192.168.1.17
+2019-11-11 23:05:07,735 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
+2019-11-11 23:05:10,568 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-4] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 23:05:10,570 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-4] Schedule Deleted. Audit Details: ScheduleID:19 Modified on:11/11/19 1:58 PM. Modified by: LAPTOP-5CEV9MRF/192.168.1.17
+2019-11-11 23:05:12,281 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-3] Getting list of all schedules in the system..
+2019-11-11 23:05:30,207 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-5] Getting list of all schedules in the system..
+2019-11-11 23:05:33,792 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Validating schedule id entered as parameter..
+2019-11-11 23:05:33,794 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-6] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 23:05:33,794 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Schedule Id validated... Getting program List
+2019-11-11 23:05:33,797 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-6] Returning program list in the schedule..
+2019-11-11 23:05:41,346 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-7] Getting list of all schedules in the system..
+2019-11-11 23:05:42,430 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Validating schedule id entered as parameter..
+2019-11-11 23:05:42,433 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-8] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 23:05:42,433 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Schedule Id validated... Getting program List
+2019-11-11 23:05:42,435 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-8] Program list is empty.
+2019-11-11 23:05:44,406 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-10] Getting list of all schedules in the system..
+2019-11-11 23:05:45,568 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Validating schedule id entered as parameter..
+2019-11-11 23:05:45,571 INFO com.cg.uas.service.UserServiceImpl [http-nio-9123-exec-9] Schedule Id is proper... returning BigInteger value of the entered Id..
+2019-11-11 23:05:45,572 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Schedule Id validated... Getting program List
+2019-11-11 23:05:45,575 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-9] Returning program list in the schedule..
+2019-11-11 23:06:26,176 INFO com.cg.uas.controller.UASController [http-nio-9123-exec-1] Getting list of all schedules in the system..
